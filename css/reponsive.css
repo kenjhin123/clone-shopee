@@ -1,0 +1,37 @@
+/* mobi and tablet */
+@media (max-width:1023px){
+    :root{
+        --header-height:60px;
+        --navbar-height:0px;
+    }
+    .hide-on-mobi-tablet{
+    display: none;
+    }
+    .header{
+        position: fixed;
+        z-index: 10;
+       top:0;
+       right: 0;
+       left: 0;
+    }
+    .container{
+        margin-top: var(--header-height);
+    }
+}
+
+/* tablet */
+@media (min-width:740px) and (max-width:1023px){
+    .hide-on-mobi{
+    display: none;
+    }
+    .header__cart {
+        width: 80px;
+        text-align: right;
+    }
+}
+/* mobi */
+@media(max-width:739px){
+    .hide-on-tablet{
+    display: none;
+    }
+}
